@@ -1,0 +1,20 @@
+nav{
+  background-color: black;
+  height: 50px;
+  display: grid;
+  place-content: center;
+}
+
+nav>ul{
+  list-style: none;
+  display: flex;
+}
+.link{
+  display: block;
+  margin-left: 20px;
+}
+
+.link a{
+  color: white;
+}
+

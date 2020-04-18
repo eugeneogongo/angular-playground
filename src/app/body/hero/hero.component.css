@@ -1,0 +1,79 @@
+.hero {
+  height: 95vh;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  z-index: 0;
+  position: relative;
+}
+
+.hero a {
+  text-decoration: none;
+  color: white;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: inherit; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+
+}
+
+.hero-article {
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  top: 50%;
+  display: grid;
+  place-self: baseline;
+  height: inherit;
+}
+
+.category-has-border {
+  border-left: red 2px solid;
+  border-left-width: thick;
+  margin-left: 30px;
+  font-weight: bold;
+  font-family: Inconsolata;
+}
+
+.top-title {
+  font-weight: 900;
+  font-family: Inconsolata;
+  font-size: 3em;
+  padding-left: 30px;
+}
+
+.hero-hr {
+  height: 5px;
+}
+
+.pp {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 50px;
+}
+
+.hr-a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.hero-icon {
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .top-title {
+    font-size: 1em;
+  }
+}

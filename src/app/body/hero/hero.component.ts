@@ -11,7 +11,7 @@ export class HeroComponent implements OnInit {
   TopNews: INew[];
   Cover: INew;
   selectedArticle: INew;
-  url = 'http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=4b696c810c9d4abb9b449986f6459402';
+  url = 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=4b696c810c9d4abb9b449986f6459402';
 
   constructor(private newsService: GetLatestNewsService) {
   }
@@ -23,7 +23,7 @@ export class HeroComponent implements OnInit {
         this.TopNews = data.articles;
         this.Cover = this.TopNews[parseInt(String(Math.random() * this.TopNews.length), 10)];
         this.selectedArticle = this.TopNews[parseInt(String(Math.random() * this.TopNews.length), 10)];
-        context.changeTopStory();
+        // context.changeTopStory();
       },
       error: err => console.log(err)
     });

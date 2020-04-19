@@ -1,13 +1,14 @@
-<div *ngIf="Article" class="container card-body selectedarticle ">
+<div *ngIf="Article" class="container mt-4">
   <div class="row rooow">
-    <div [style.background-image]="'url('+Article.urlToImage+')'" [title]="Article.title"
-         class="col-sm-8 bg-image"></div>
+    <div class="col-sm-8  selectedarticle">
+      <img [src]="Article.urlToImage" class="img-fluid">
+    </div>
     <div class="col-sm-4 card-body">
       <p class="category-has-border">{{Article.source.name}}</p>
       <p class="title">{{Article.title}}</p>
       <p class="descripton">{{Article.description}}</p>
+      <p class="text-muted">{{Article.publishedAt | dateFormatter}}</p>
     </div>
-
   </div>
 </div>
 <ng-template #loading>

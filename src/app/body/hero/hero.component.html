@@ -1,6 +1,6 @@
 <div *ngIf="TopNews else loading" [style.background-image]="'url('+Cover.urlToImage+')'" class="hero">
   <div class="hero-article">
-    <div class="pp offset-1 mb-2">
+    <div class="pp offset-sm-1 mb-2">
       <div class="container lightSpeedIn slower">
         <div class="row">
           <div class="col-sm-9">
@@ -10,22 +10,22 @@
           <div class="col-sm-4"></div>
         </div>
         <hr class="hero-hr">
-        <div class="container mb-3">
+        <div class="container mb-3 ">
           <div class="row">
             <div class="col-sm-4">
-              <a [href]=[Cover.url] class="hr-a"> <i class="fa fa-share hero-icon"></i>Read More</a>
+              <a [href]=[Cover.url] class="hr-a text-muted"> <i class="fa fa-share hero-icon"></i>Read More</a>
             </div>
             <div class="col-sm-4">
-              <a class="hr-a" href=""><i class="fa fa-arrow-circle-right hero-icon"></i>Share story</a>
+              <a class="hr-a text-muted" href=""><i class="fa fa-arrow-circle-right hero-icon"></i>Share story</a>
             </div>
           </div>
         </div>
 
-        <div class="row">
-          <div *ngFor="let new of TopNews.slice(0,3)" class="col-sm-4">
+        <div class="row" >
+          <div *ngFor="let new of TopNews.slice(0,3)" class="col-sm-4 d-none d-sm-block">
             <a [href]=[new.url]>
               <p>{{new.title}}</p>
-              <p>{{new.publishedAt}}</p>
+              <p class="text-muted">{{new.publishedAt | dateFormatter}}</p>
             </a>
           </div>
 

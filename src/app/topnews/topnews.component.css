@@ -1,0 +1,13 @@
+.title {
+  font-weight: 900;
+  font-family: Inconsolata;
+  font-size: 1em;
+}
+.category-has-border {
+  border-left: red 2px solid;
+  border-left-width: thick;
+  font-weight: bold;
+  font-family: Inconsolata;
+  padding-left: 2px;
+  margin-top: 5px;
+}

@@ -75,6 +75,26 @@
 
 @media only screen and (max-width: 600px) {
   .top-title {
-    font-size: 1em;
+    font-size: 2em;
+    padding-left: 10px;
+  }
+
+  .hero-article {
+    background-color: rgba(0, 0, 0, 0.75); /* Black background with opacity */
+    top: 50%;
+    display: grid;
+    place-items: center;
+    height: inherit;
+  }
+  .pp {
+
+  }
+  .category-has-border {
+    border-left: red 2px solid;
+    border-left-width: thick;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: Inconsolata;
   }
 }

@@ -6,10 +6,14 @@ import {NavigationModule} from './navigation/navigation.module';
 import {BodyModule} from './body/body.module';
 import {HttpClientModule} from '@angular/common/http';
 import {RouterModule} from '@angular/router';
+import { TopnewsComponent } from './topnews/topnews.component';
+import {PipesModule} from './pipes/pipes.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopnewsComponent
   ],
   imports: [
     BrowserModule,
@@ -17,10 +21,14 @@ import {RouterModule} from '@angular/router';
     BodyModule,
     HttpClientModule,
     RouterModule.forRoot([
-      {path: '', component: AppComponent, pathMatch: "full"}
-    ])
+      {path: '', component: AppComponent, pathMatch: 'full'}
+    ]),
+    PipesModule
   ],
   providers: [],
+  exports: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

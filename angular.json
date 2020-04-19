@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "netflixsummary"
+    }
+  },
+  "defaultProject": "netflixsummary",
+  "cli": {
+    "analytics": false
+  }
 }

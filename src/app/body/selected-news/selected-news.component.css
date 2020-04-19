@@ -1,0 +1,28 @@
+.category-has-border {
+  border-left: red 2px solid;
+  border-left-width: thick;
+  font-weight: bold;
+  font-family: Inconsolata;
+  padding-left: 10px;
+}
+
+.title {
+  font-weight: 900;
+  font-family: Inconsolata;
+  font-size: 1em;
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+}
+
+.selectedarticle {
+  height: 30vh;
+  margin-bottom: 30px;
+}
+
+.selectedarticle .row {
+  height: inherit;
+}

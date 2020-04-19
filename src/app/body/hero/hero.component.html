@@ -1,7 +1,7 @@
 <div *ngIf="TopNews else loading" [style.background-image]="'url('+Cover.urlToImage+')'" class="hero">
   <div class="hero-article">
     <div class="pp offset-1 mb-2">
-      <div class="container">
+      <div class="container lightSpeedIn slower">
         <div class="row">
           <div class="col-sm-9">
             <p class="category-has-border">{{Cover.source.name}}</p>
@@ -33,9 +33,8 @@
       </div>
     </div>
   </div>
-
 </div>
-
+<app-selected-news *ngIf="TopNews else loading" [Article]="selectedArticle"></app-selected-news>
 <ng-template #loading>
   <div>Loading...</div>
 </ng-template>

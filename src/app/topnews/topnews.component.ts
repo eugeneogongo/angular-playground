@@ -9,7 +9,7 @@ import {INew} from "../services/INew";
 })
 export class TopnewsComponent implements OnInit {
   news: INew[];
-  url = 'https://newsapi.org/v2/everything?q=apple&from=2020-04-18&to=2020-04-18&sortBy=popularity&apiKey=4b696c810c9d4abb9b449986f6459402';
+  url = 'https://newsapi.org/v2/everything?q=apple&sortBy=popularity&apiKey=4b696c810c9d4abb9b449986f6459402';
   constructor(private newservice: GetLatestNewsService) { }
 
   ngOnInit(): void {
